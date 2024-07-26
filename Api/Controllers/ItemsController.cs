@@ -2,29 +2,30 @@ using Api.Domain;
 using Api.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Api.Controllers
+namespace Api.Controllers;
+
+[ApiController]
+[Route("items")]
+public class ItemsController : ControllerBase
 {
-    [ApiController]
-    [Route("items")]
-    public class ItemsController : ControllerBase
+    private readonly IItemsService _itemsService;
+
+    public ItemsController(IItemsService itemsService)
     {
+        _itemsService = itemsService;
+    }
 
-        public ItemsController()
-        {
-        }
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<ItemDto>>> Get()
+    {
+        var items = await _itemsService.GetItems();
+        return Ok(items);
+    }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<ItemDto>>> Get()
-        {
-            // TODO: Return items fetched from external API
-            return Array.Empty<ItemDto>();
-        }
-
-        [HttpPost]
-        public async Task<ActionResult<IEnumerable<ItemDto>>> Post([FromForm]string[] items)
-        {
-            // TODO: Return a list of the items selected based on the "items" array posted from the frontend
-            return Array.Empty<ItemDto>();
-        }
+    [HttpPost]
+    public async Task<ActionResult<IEnumerable<ItemDto>>> Post([FromForm]string[] items)
+    {
+        var response = await _itemsService.GetSelectedItems(items);
+        return Ok(response);
     }
 }

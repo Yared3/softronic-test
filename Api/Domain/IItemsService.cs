@@ -1,9 +1,9 @@
 ﻿using Api.Models;
 
-namespace Api.Domain
+namespace Api.Domain;
+
+public interface IItemsService
 {
-    public interface IItemsService
-    {
-        public Task<IEnumerable<ItemDto>> GetItems();
-    }
+    public Task<IEnumerable<ItemDto>> GetItems();
+    public Task<IEnumerable<ItemDto>> GetSelectedItems(string[] selectedItems);
 }

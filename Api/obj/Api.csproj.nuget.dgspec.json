@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MARSOD\\Documents\\Code\\core\\intervju-test\\Api\\Api.csproj": {}
+    "C:\\Users\\Y\\source\\repos\\softronic-test\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MARSOD\\Documents\\Code\\core\\intervju-test\\Api\\Api.csproj": {
+    "C:\\Users\\Y\\source\\repos\\softronic-test\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MARSOD\\Documents\\Code\\core\\intervju-test\\Api\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\Y\\source\\repos\\softronic-test\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\MARSOD\\Documents\\Code\\core\\intervju-test\\Api\\Api.csproj",
-        "packagesPath": "C:\\Users\\MARSOD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MARSOD\\Documents\\Code\\core\\intervju-test\\Api\\obj\\",
+        "projectPath": "C:\\Users\\Y\\source\\repos\\softronic-test\\Api\\Api.csproj",
+        "packagesPath": "C:\\Users\\Y\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Y\\source\\repos\\softronic-test\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\MARSOD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Y\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,9 +27,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.optimizely.com/feed/packages.svc/": {},
-          "https://pkgs.dev.azure.com/kst78/Core/_packaging/utilities/nuget/v3/index.json": {}
+          "C:\\Users\\Y\\source\\repos\\pluralsight-ddd-fundamentals\\FrontDesk\\src\\FrontDesk.Blazor\\deps\\Pluralsight.DDD.Deps": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
